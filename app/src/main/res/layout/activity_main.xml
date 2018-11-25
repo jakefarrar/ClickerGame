@@ -7,28 +7,17 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="101dp"
-        android:layout_height="39dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="29dp"
         android:text="SCORE:"
         android:textSize="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.368"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.936" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.548"
-        app:srcCompat="@drawable/target" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -57,7 +46,7 @@
         app:srcCompat="@drawable/cart" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_score"
         android:layout_width="117dp"
         android:layout_height="38dp"
         android:text="0"
@@ -68,5 +57,19 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.934" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="157dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/textView_score"
+        app:layout_constraintStart_toStartOf="@+id/textView_score"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/target" />
 
 </android.support.constraint.ConstraintLayout>
