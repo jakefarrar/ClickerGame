@@ -168,6 +168,16 @@ public class Store extends AppCompatActivity {
                     catch (JSONException e) {
                         Log.d("JSON", e.getMessage());
                     }
+                    totalCost.setText("Cost: 0");
+
+                    pointsView = findViewById(R.id.textView7);
+                    String pointsStr = "Points: " + points;
+                    pointsView.setText(pointsStr);
+
+                    plus10Count.setText("0");
+                    plus20Count.setText("0");
+                    plus50Count.setText("0");
+
                     writeState(clickerSetup);
                     Toast.makeText(view.getContext(), "Purchase successful!",
                             Toast.LENGTH_LONG).show();

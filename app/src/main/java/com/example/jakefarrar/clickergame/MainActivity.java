@@ -127,8 +127,8 @@ public class MainActivity extends AppCompatActivity {
 
     protected void writeState(JSONObject clickerSetup) {
         String time = (String) timerTextView.getText();
-        String minutes = time.substring(0, 1);
-        String seconds = time.substring(2);
+        String minutes = time.split(":")[0];
+        String seconds = time.split(":")[1];
 
         long totalTime = ((Integer.parseInt(minutes) * 60) + (Integer.parseInt(seconds))) * 1000;
 
